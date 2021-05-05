@@ -1,0 +1,23 @@
+@mixin bf($t:0, $l:0, $index: 0) {
+  content: "";
+  position: absolute;
+  top: $t;
+  left: $l;
+  z-index: $index;
+}
+
+@mixin af($b:0, $r:0, $index: 0) {
+  content: "";
+  position: absolute;
+  bottom: $b;
+  right: $r;
+  z-index: $index;
+}
+
+@mixin bg-img($size, $w, $h) {
+  background-repeat: no-repeat;
+  background-size: $size;
+  width: $w;
+  height: $h;
+}
+

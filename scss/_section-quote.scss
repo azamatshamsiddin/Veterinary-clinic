@@ -1,0 +1,56 @@
+.quote {
+  text-align: center;
+  position: relative;
+  &::before{
+    @include bf(0, 210px);
+    @include bg-img(contain, 60px, 60px);
+    background-image: url(../images/“.svg);
+    transform: rotate(180deg);
+  }
+  &::after{
+    @include af(75px, 210px);
+    @include bg-img(contain, 60px, 60px);
+    background-image: url(../images/“.svg);
+  }
+
+  &__text {
+    width: 100%;
+    color: $text-color;
+    font-size: 20px;
+    line-height: 26px;
+    max-width: 750px;
+    padding: 43px 0 35px 0;
+    margin: 0 auto;
+    position: relative;
+    &::before{
+      @include bf();
+      @include bg-img(contain, 140px, 1px);
+      background-image: url(../images/quote-line.svg);
+      right: 0;
+      display: block;
+      margin: 0 auto;
+
+    }
+
+    &::after{
+      @include af();
+      @include bg-img(contain, 140px, 1px);
+      background-image: url(../images/quote-line.svg);
+      left: 0;
+      margin: 0 auto;
+      display: block;
+    }
+
+  }
+
+  &__author {
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 26px;
+    margin-top: 35px;
+  }
+}
+
+/* =======================
+  SECTION-QUOTE END OF
+========================= */

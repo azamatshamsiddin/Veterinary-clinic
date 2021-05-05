@@ -1,0 +1,94 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+p,
+h1,
+h2,
+h3,
+h4,
+h4,
+h5,
+h6 {
+  margin: 0;
+  padding: 0;
+}
+
+a,
+ul,
+li {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+body {
+  background-image: url(../images/bg.png);
+  background-repeat: no-repeat;
+  background-position-y: 8rem;
+  background-size: cover;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  font-weight: 20px;
+  font-family: 'FuturaPT';
+  background-color: $bg-color;
+  color: $dark-color;
+}
+
+.btn {
+  padding: 15px 50px;
+  border-radius: 3px;
+  display: inline-block;
+  color: #fff;
+}
+
+.container {
+  width: 100%;
+  max-width: 1410px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+.address__text,
+.phone__number,
+.work-schedule__item {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 18px;
+  color: $dark-color;
+}
+
+.address,
+.phone,
+.work-schedule {
+  position: relative;
+}
+
+
+.address::before {
+  @include bf(2px, -25px, 0);
+  @include bg-img(contain, 16px, 16px);
+  background-image: url(../images/icons/i-house.svg);
+
+}
+
+.phone::before {
+  @include bf(2px, -25px, 0);
+  @include bg-img(contain, 16px, 16px);
+  background-image: url(../images/icons/i-phone.svg);
+
+}
+
+.work-schedule::before {
+  @include bf(2px, -25px, 0);
+  @include bg-img(contain, 16px, 16px);
+  background-image: url(../images/icons/icon-schedule.svg);
+
+}

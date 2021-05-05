@@ -1,0 +1,56 @@
+.section-main {
+  position: relative;
+  padding: 150px 0;
+
+  &::before {
+    @include bf(-90px);
+    @include bg-img(contain, 870px, 835px);
+    background-image: url(../images/animals.png);
+  }
+
+  &::after {
+    @include af();
+    @include bg-img(contain, 235px, 430px);
+    background-image: url(../images/bird.png);
+  }
+}
+
+.main {
+  &-wrapper {
+    display: flex;
+    justify-content: flex-end;
+  }
+
+  &-body {
+    max-width: 610px;
+    padding-bottom: 170px;
+    align-items: flex-end;
+
+
+    &__title {
+      font-weight: 700;
+      font-size: 70px;
+      line-height: 64px;
+
+      span {
+        color: $blue-color;
+      }
+    }
+
+    &__text {
+      color: $text-color;
+      line-height: 21px;
+      max-width: 495px;
+      margin-top: 29px;
+    }
+
+    &__btn {
+      background-color: $dark-color;
+      margin-top: 38px;
+    }
+  }
+}
+
+/* =======================
+      SECTION-MAIN END OF
+========================= */

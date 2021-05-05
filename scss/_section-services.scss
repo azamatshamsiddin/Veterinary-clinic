@@ -1,0 +1,98 @@
+.section-services{
+  padding: 100px 0;
+}
+
+.services {
+  &__title {
+    text-align: center;
+    font-weight: 700;
+    font-size: 48px;
+    line-height: 54px;
+  }
+
+  &__card-prev,
+  &__card-next {
+    // display: inline-block;
+    position: relative;
+    top: 90px;
+
+  }
+
+  &__card {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    margin-top: 80px;
+  }
+
+  &__card-inner {
+    padding: 30px 35px;
+    // flex-basis: 193px;
+    max-width: 193px;
+    max-height: 201px;
+    background-color: #fff;
+    text-align: center;
+    &--active{
+      height: 100%;
+      max-height: 220px;
+    }
+  }
+
+  &__img {
+    // display: inline-block;
+  }
+
+  &__name {
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 22px;
+    margin-top: 21px;
+  }
+
+  &__slide{
+  }
+}
+
+
+.slide {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  background-color: #fff;
+  padding: 42px 35px;
+
+  &__content {
+    max-width: 490px;
+  }
+
+  &__title {
+    font-weight: 500;
+    font-size: 36px;
+    line-height: 20px;
+    margin-bottom: 9px;
+  }
+
+  &__text {
+    color: $text-color;
+    padding-top: 9px;
+  }
+
+  &__price {
+    background-color: $orange-color;
+    margin-top: 34px;
+    margin-right: 20px;
+  }
+
+  &__sign-up {
+    margin-top: 34px;
+
+    background-color: $dark-color;
+  }
+}
+
+
+
+
+/* =======================
+  SECTION-SERVICES END OF
+========================= */

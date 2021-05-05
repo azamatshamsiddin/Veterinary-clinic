@@ -1,0 +1,103 @@
+.header {
+  background-color: $bg-color;
+
+  &-inner {
+    display: flex;
+  }
+
+  &-top {
+    display: flex;
+    justify-content: flex-end;
+    padding: 15px 0;
+
+    div {
+      margin-left: 165px;
+    }
+  }
+
+  &__phone ul,
+  &__work-schedule ul {
+    display: flex;
+    align-items: center;
+  }
+
+
+  &__nav {
+    background-color: #fff;
+    padding: 15px 0;
+  }
+}
+
+.phone li {
+  margin-left: 22px;
+  position: relative;
+
+  &:first-child {
+    margin-left: 0;
+
+    &::before {
+      display: none;
+    }
+  }
+
+  &::before {
+    @include bf(9px, -13px);
+    @include bg-img(contain, 4px, 4px);
+    background-image: url(../images/icons/dot.svg);
+  }
+
+}
+
+.nav {
+  display: flex;
+  position: relative;
+
+  &::before{
+    @include bf(-30px);
+    @include bg-img(contain, 178px, 87px);
+    background-image: url(../images/logo.svg);
+  }
+  
+  ul {
+    margin: 0 auto 0 335px;
+    display: flex;
+    
+    li {
+      margin-left: 55px;
+      
+      &:first-child {
+        margin: 0;
+      }
+    }
+  }
+  
+  &__link {
+    display: inline-block;
+    padding: 5px;
+    text-align: center;
+    font-weight: 500;
+    line-height: 21px;
+    color: $dark-color;
+    position: relative;
+
+    &--active::before {
+      @include bf(4px, -30px);
+      @include bg-img(contain, 22px, 22px);
+      background-image: url(../images/icons/icon-fish.svg);
+    }
+  }
+
+  &__btn {
+    padding: 5px;
+    display: inline-block;
+    font-weight: 500;
+    line-height: 21px;
+    color: $dark-color;
+    position: relative;
+    &::before {
+      @include bf(4px, -24px);
+      @include bg-img(contain, 23px, 23px);
+      background-image: url(../images/icons/icon-paw.svg);
+    }
+  }
+}
