@@ -735,4 +735,43 @@ SECTION-ARTICLES END OF
 /* ==========================
   SECTION-FEEDBACK END OF
 ==============================*/
+.footer {
+  background-color: #f3f3f3;
+  padding: 60px 0 25px;
+  margin-top: 200px;
+}
+
+.footer__top {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+}
+
+.footer__link {
+  font-weight: 500;
+  line-height: 21px;
+  margin-bottom: 14px;
+  display: inline-block;
+  color: #333333;
+}
+
+.footer__address {
+  max-width: 135px;
+}
+
+.footer li {
+  margin: 0;
+}
+
+.footer li::before {
+  display: none;
+}
+
+.footer__bottom {
+  text-align: right;
+  font-size: 14px;
+  line-height: 18px;
+  color: #5c5c5c;
+  margin-top: 14px;
+}
 /*# sourceMappingURL=main.css.map */
