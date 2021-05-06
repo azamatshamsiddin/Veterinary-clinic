@@ -1,0 +1,54 @@
+.section-subscription {
+  position: relative;
+  // margin: 120px 0;
+  margin-top: 120px;
+
+  &::before {
+    @include bf();
+    @include bg-img(cover, 100%, 100%);
+    background-image: url(../images/subscription-bg.png);
+  }
+
+}
+
+.subscription {
+  padding: 90px 0;
+  position: relative;
+  margin-left: 260px;
+
+  &::after {
+    @include af(-67px);
+    @include bg-img(contain, 608px, 480px);
+    background-image: url(../images/img-dog.png);
+  }
+
+  &__title {
+    font-weight: 700;
+    font-size: 48px;
+    color: #fff;
+    margin-bottom: 32px;
+  }
+
+  &__input {
+    display: inline;
+    outline: none;
+    border: none;
+    border-radius: 5px;
+    padding: 18px 22px;
+    background-color: #fff;
+    width: 350px;
+
+    &::placeholder {
+      color: $text-color;
+    }
+  }
+
+  &__btn {
+    background-color: $dark-color;
+    margin-left: 21px;
+  }
+}
+
+/* ==========================
+  SECTION-SUBSCRIPTION END OF
+==============================*/

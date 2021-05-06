@@ -77,6 +77,28 @@ body {
   color: #fff;
 }
 
+.sc-btn {
+  padding: 5px;
+  display: inline-block;
+  font-weight: 500;
+  line-height: 21px;
+  color: #333333;
+  position: relative;
+}
+
+.sc-btn::before {
+  content: "";
+  position: absolute;
+  top: 4px;
+  left: -24px;
+  z-index: 0;
+  background-repeat: no-repeat;
+  background-size: contain;
+  width: 23px;
+  height: 23px;
+  background-image: url(../images/icons/icon-paw.svg);
+}
+
 .container {
   width: 100%;
   max-width: 1410px;
@@ -206,12 +228,13 @@ body {
   position: absolute;
   top: -30px;
   left: 0;
-  z-index: 0;
+  z-index: 10;
   background-repeat: no-repeat;
   background-size: contain;
   width: 178px;
   height: 87px;
   background-image: url(../images/logo.svg);
+  cursor: pointer;
 }
 
 .nav ul {
@@ -250,28 +273,6 @@ body {
   background-image: url(../images/icons/icon-fish.svg);
 }
 
-.nav__btn {
-  padding: 5px;
-  display: inline-block;
-  font-weight: 500;
-  line-height: 21px;
-  color: #333333;
-  position: relative;
-}
-
-.nav__btn::before {
-  content: "";
-  position: absolute;
-  top: 4px;
-  left: -24px;
-  z-index: 0;
-  background-repeat: no-repeat;
-  background-size: contain;
-  width: 23px;
-  height: 23px;
-  background-image: url(../images/icons/icon-paw.svg);
-}
-
 .section-main {
   position: relative;
   padding: 150px 0;
@@ -282,7 +283,7 @@ body {
   position: absolute;
   top: -90px;
   left: 0;
-  z-index: 0;
+  z-index: -1;
   background-repeat: no-repeat;
   background-size: contain;
   width: 870px;
@@ -295,7 +296,7 @@ body {
   position: absolute;
   bottom: 0;
   right: 0;
-  z-index: 0;
+  z-index: -1;
   background-repeat: no-repeat;
   background-size: contain;
   width: 235px;
@@ -505,4 +506,233 @@ body {
 /* =======================
   SECTION-SERVICES END OF
 ========================= */
+.section-subscription {
+  position: relative;
+  margin-top: 120px;
+}
+
+.section-subscription::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 0;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  height: 100%;
+  background-image: url(../images/subscription-bg.png);
+}
+
+.subscription {
+  padding: 90px 0;
+  position: relative;
+  margin-left: 260px;
+}
+
+.subscription::after {
+  content: "";
+  position: absolute;
+  bottom: -67px;
+  right: 0;
+  z-index: 0;
+  background-repeat: no-repeat;
+  background-size: contain;
+  width: 608px;
+  height: 480px;
+  background-image: url(../images/img-dog.png);
+}
+
+.subscription__title {
+  font-weight: 700;
+  font-size: 48px;
+  color: #fff;
+  margin-bottom: 32px;
+}
+
+.subscription__input {
+  display: inline;
+  outline: none;
+  border: none;
+  border-radius: 5px;
+  padding: 18px 22px;
+  background-color: #fff;
+  width: 350px;
+}
+
+.subscription__input::placeholder {
+  color: #949494;
+}
+
+.subscription__btn {
+  background-color: #333333;
+  margin-left: 21px;
+}
+
+/* ==========================
+  SECTION-SUBSCRIPTION END OF
+==============================*/
+.section-articles {
+  padding: 150px 0;
+}
+
+.article__title {
+  font-weight: 700;
+  font-size: 48px;
+  text-align: center;
+}
+
+.article__card {
+  margin-top: 80px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.article__card-content {
+  padding: 0 30px 35px;
+}
+
+.article__card-inner1 {
+  display: flex;
+  flex-direction: column;
+  align-content: space-between;
+  max-width: 305px;
+  background-color: #fff;
+}
+
+.article__span {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 30px;
+}
+
+.article__card-date {
+  display: flex;
+  justify-content: flex-end;
+  margin-top: 20px;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 18px;
+  color: #949494;
+}
+
+.article__card-tags {
+  margin-top: 20px;
+  font-size: 14px;
+  line-height: 22px;
+  color: #78C0DE;
+}
+
+.article__card-inner2 {
+  display: flex;
+  align-items: center;
+  max-width: 640px;
+  background-color: #fff;
+}
+
+.article__card-title {
+  font-weight: bold;
+  font-size: 22px;
+  line-height: 25px;
+}
+
+.article__card-info {
+  color: #949494;
+  margin-top: 15px;
+}
+
+.article__card-btn {
+  margin: 30px 0 0 20px;
+}
+
+.article__text-box {
+  padding: 10px 35px 35px 30px;
+}
+
+/* ==========================
+SECTION-ARTICLES END OF
+==============================*/
+.section-feedback {
+  margin: 100px 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #333333;
+}
+
+.feedback {
+  padding: 65px 0;
+  background-image: url(../images/feedback-bg.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+}
+
+.feedback__map {
+  background-color: #eeeeee;
+  width: 650px;
+  height: 650px;
+}
+
+.feedback__inner {
+  max-width: 375px;
+  margin-left: 120px;
+}
+
+.feedback__title {
+  font-weight: bold;
+  font-size: 48px;
+  line-height: 62px;
+  color: #fff;
+  margin-bottom: 14px;
+}
+
+.feedback__info {
+  color: #949494;
+  margin-bottom: 30px;
+}
+
+.feedback__form input {
+  display: block;
+  padding: 16px 22px;
+  width: 100%;
+  margin-bottom: 14px;
+}
+
+.feedback__form input::placeholder {
+  font-family: 'FuturaPT';
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 21px;
+  color: #949494;
+}
+
+.feedback__form textarea {
+  display: block;
+  width: 100%;
+  height: 165px;
+  padding: 16px 22px;
+  resize: none;
+  margin-bottom: 30px;
+}
+
+.feedback__form textarea::placeholder {
+  font-family: 'FuturaPT';
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 21px;
+  color: #949494;
+}
+
+.feedback__btn {
+  outline: none;
+  border: none;
+  background-color: #FFBD54;
+}
+
+/* ==========================
+  SECTION-FEEDBACK END OF
+==============================*/
 /*# sourceMappingURL=main.css.map */

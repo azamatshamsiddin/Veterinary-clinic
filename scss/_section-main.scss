@@ -3,13 +3,13 @@
   padding: 150px 0;
 
   &::before {
-    @include bf(-90px);
+    @include bf(-90px,0,-1);
     @include bg-img(contain, 870px, 835px);
     background-image: url(../images/animals.png);
   }
 
   &::after {
-    @include af();
+    @include af(0,0,-1);
     @include bg-img(contain, 235px, 430px);
     background-image: url(../images/bird.png);
   }

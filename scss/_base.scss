@@ -49,6 +49,20 @@ body {
   color: #fff;
 }
 
+.sc-btn{
+  padding: 5px;
+  display: inline-block;
+  font-weight: 500;
+  line-height: 21px;
+  color: $dark-color;
+  position: relative;
+  &::before {
+    @include bf(4px, -24px);
+    @include bg-img(contain, 23px, 23px);
+    background-image: url(../images/icons/icon-paw.svg);
+  }
+}
+
 .container {
   width: 100%;
   max-width: 1410px;
